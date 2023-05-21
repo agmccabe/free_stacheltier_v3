@@ -34,7 +34,7 @@ print("just press enter to exit")
 print("")
 
 while tk is not '':
-    tk = str(raw_input('terminal key:'))
+    tk = str(input('terminal key:'))
     if tk is '':
         break
     b = key_to_bytes(tk)
@@ -55,5 +55,6 @@ while tk is not '':
     t3 = d3.encrypt(buffer(t2,0,8))
     print("Congratulations!")
     print("your reset key:")
-    print(bytes_to_key(bytearray(t3)))
+    print((bytes_to_key(bytearray(t3))))
     print("")
+
